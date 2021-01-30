@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+    <script src="video.js" defer></script>
+    <style>
+      canvas {
+        background: #eee;
+      }
+      video {
+        position: absolute;
+        width: 0;
+        height: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>video</h1>
+    <!-- 
+      chrome에서는 소리가 나는 영상은 autoplay 불가.
+      따라서 autoplay를 해줄거면 muted도 같이 써줘야 함.
+    -->
+    <video class="video" src="./video.mp4" autoplay muted loop></video>
+    <canvas class="canvas" width="600" height="400">
+      이 브라우저는 캔버스를 지원하지 않습니다.
+    </canvas>
+  </body>
+</html>
